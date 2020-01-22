@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
 </head>
 <body>
 <div class="container">
         <div id="question-container" class="hide">
+            <div>
+                <span id="correctScore"></span>
+                <span id="wrongScore"></span>
+            </div>
             <div id="question">Question</div>
             <div id="answer-buttons" class="btn-grid">
             <button class="btn">Answer 1</button>
@@ -19,6 +23,10 @@
             <button class="btn">Answer 3</button>
             <button class="btn">Answer 4</button>
             </div>
+            <div> 
+                <span class="seconds" id="second">00</span>
+            </div>
+
         </div>
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
